@@ -70,6 +70,7 @@ Quality assurance and testing.
 ### Specialists
 Specialized roles for specific concerns.
 
+- **[Hypervisor Specialist](specialists/hypervisor-specialist.md)** - Virtualization, isolation, GPU passthrough, cross-platform appliance runtime (CRITICAL for ai-way)
 - **[DevOps Engineer](specialists/devops-engineer.md)** - Infrastructure, CI/CD, deployment, monitoring
 - **[Documentation Specialist](specialists/documentation-specialist.md)** - Technical writing, API docs, user guides
 - **[Performance Optimizer](specialists/performance-optimizer.md)** - Profiling, optimization, caching, speed improvements
@@ -113,11 +114,12 @@ Each agent profile includes:
 **Product**: Privacy-first local AI appliance for small business owners
 **User**: Average Joe (AJ) - minimal tech knowledge, family business owner
 **Tech Stack**:
-- Appliance: Fedora Silverblue, Podman/Docker, tmpfs (ephemeral storage)
+- Appliance: Fedora Silverblue OR Alpine Linux, Podman, tmpfs (ephemeral storage)
+- Virtualization: WSL2 (Windows), Lima (macOS), native (Linux)
 - AI: Ollama (Llama 3.1, Mistral), ChromaDB (vector DB), RAG pipeline
 - Frontend: Electron/Tauri, drag-drop UI
 - Backend: Python (FastAPI), file parsers
-- Hardware: GPU-accelerated (NVIDIA/AMD) with CPU fallback
+- Hardware: GPU-accelerated (NVIDIA/AMD CUDA/ROCm, Apple Silicon Metal) with CPU fallback
 
 **Core Principles**:
 - **Local-first**: All inference on AJ's computer, zero network calls
@@ -128,13 +130,14 @@ Each agent profile includes:
 
 **Key Agents**:
 - UX/UI Designer (minimalist, AJ-focused interface - CRITICAL)
-- Solutions Architect (appliance architecture, isolation model)
+- Hypervisor Specialist (virtualization magic, cross-platform, GPU passthrough - CRITICAL)
+- Security Auditor (privacy architecture, threat modeling, isolation boundaries - CRITICAL)
+- Solutions Architect (appliance architecture, overall system design)
 - Vector Database Expert (RAG, semantic search, embeddings)
 - Backend Engineer (file parsing, query processing, RAG pipeline)
 - Frontend Specialist (Electron/Tauri, drag-drop UI)
-- Security Auditor (privacy architecture, threat modeling - CRITICAL)
-- DevOps Engineer (container build, distribution, GPU drivers)
-- Performance Optimizer (GPU optimization, query latency)
+- DevOps Engineer (container build, distribution, updates)
+- Performance Optimizer (GPU optimization, query latency, minimal overhead)
 - Documentation Specialist (AJ-friendly language, terminology dictionary)
 - QA Engineer (cross-platform testing, file format support)
 - Relational Database Expert (structured data handling - future)
@@ -225,4 +228,4 @@ This repository inherits the AGPL-3.0 license.
 
 **Maintained by**: 8007342
 **Last Updated**: 2025-12-18
-**Total Agents**: 18
+**Total Agents**: 19
