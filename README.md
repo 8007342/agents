@@ -6,7 +6,21 @@ A collection of specialized AI agent profiles for building software projects. Ea
 
 This repository contains agent definitions used to build:
 - **[inat-observations-wp](https://github.com/8007342/inat-observations-wp)**: WordPress plugin for iNaturalist observations (learning project)
-- **[ai-way](https://github.com/8007342/ai-way)**: Long-term ambitious AI project
+- **[ai-way](https://github.com/8007342/ai-way)**: Privacy-first local AI appliance for small business owners
+
+## User Personas
+
+Understanding who we're building for is critical. All agents must design with our users in mind.
+
+- **[Average Joe (AJ)](personas/average-joe.md)** - Primary user for ai-way: small business owner, minimal tech knowledge, no time to learn, needs privacy protection
+
+## ai-way Project Documentation
+
+Comprehensive documentation for the ai-way privacy-first AI appliance:
+
+- **[Appliance Overview](ai-way-docs/appliance-overview.md)** - Complete product vision, architecture, and roadmap
+- **[Terminology Dictionary](ai-way-docs/terminology-dictionary.md)** - Technical terms → AJ-friendly language (CRITICAL: all agents must use this)
+- **[Privacy-First Architecture](ai-way-docs/privacy-first-architecture.md)** - Security model, threat protection, ephemeral design
 
 ## Agent Categories
 
@@ -96,15 +110,35 @@ Each agent profile includes:
 - Security Auditor (API security, data privacy)
 
 ### ai-way
-**Tech Stack**: TBD (early stage, likely includes AI/ML components)
-**Scope**: Ambitious long-term AI project
+**Product**: Privacy-first local AI appliance for small business owners
+**User**: Average Joe (AJ) - minimal tech knowledge, family business owner
+**Tech Stack**:
+- Appliance: Fedora Silverblue, Podman/Docker, tmpfs (ephemeral storage)
+- AI: Ollama (Llama 3.1, Mistral), ChromaDB (vector DB), RAG pipeline
+- Frontend: Electron/Tauri, drag-drop UI
+- Backend: Python (FastAPI), file parsers
+- Hardware: GPU-accelerated (NVIDIA/AMD) with CPU fallback
+
+**Core Principles**:
+- **Local-first**: All inference on AJ's computer, zero network calls
+- **Ephemeral**: Everything in RAM, destroyed on close
+- **Simple**: Drag files in, ask questions, drag results out
+- **Private**: AJ's data never leaves their computer
+- **Offline**: Works without internet
+
 **Key Agents**:
-- Solutions Architect (overall architecture)
-- Vector Database Expert (RAG, embeddings, semantic search)
-- Full-Stack Developer (implementation)
-- UX/UI Designer (minimalist, accessible AI UX)
-- Security Auditor (AI security, privacy)
-- All specialists as needed
+- UX/UI Designer (minimalist, AJ-focused interface - CRITICAL)
+- Solutions Architect (appliance architecture, isolation model)
+- Vector Database Expert (RAG, semantic search, embeddings)
+- Backend Engineer (file parsing, query processing, RAG pipeline)
+- Frontend Specialist (Electron/Tauri, drag-drop UI)
+- Security Auditor (privacy architecture, threat modeling - CRITICAL)
+- DevOps Engineer (container build, distribution, GPU drivers)
+- Performance Optimizer (GPU optimization, query latency)
+- Documentation Specialist (AJ-friendly language, terminology dictionary)
+- QA Engineer (cross-platform testing, file format support)
+- Relational Database Expert (structured data handling - future)
+- Compliance Lawyer (privacy regulations, GDPR/CCPA by design)
 
 ## Agent Collaboration Examples
 
