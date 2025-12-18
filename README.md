@@ -67,6 +67,11 @@ Quality assurance and testing.
 
 - **[QA Engineer](qa/qa-engineer.md)** - Test planning, automation, bug tracking, quality advocacy
 
+### Research
+Scientific investigation of privacy, security, and emerging threats.
+
+- **[Privacy Researcher](research/privacy-researcher.md)** - Agent fingerprinting, data exfiltration research, behavioral analysis, privacy-preserving systems (CRITICAL for ai-way)
+
 ### Specialists
 Specialized roles for specific concerns.
 
@@ -131,6 +136,7 @@ Each agent profile includes:
 **Key Agents**:
 - UX/UI Designer (minimalist, AJ-focused interface - CRITICAL)
 - Hypervisor Specialist (virtualization magic, cross-platform, GPU passthrough - CRITICAL)
+- Privacy Researcher (agent fingerprinting research, data exfiltration investigation - CRITICAL)
 - Security Auditor (privacy architecture, threat modeling, isolation boundaries - CRITICAL)
 - Solutions Architect (appliance architecture, overall system design)
 - Vector Database Expert (RAG, semantic search, embeddings)
@@ -228,4 +234,4 @@ This repository inherits the AGPL-3.0 license.
 
 **Maintained by**: 8007342
 **Last Updated**: 2025-12-18
-**Total Agents**: 19
+**Total Agents**: 20
