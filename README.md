@@ -23,9 +23,20 @@ Strategic technical leadership and system design.
 - **[Solutions Architect](architects/solutions-architect.md)** - System architecture, technology decisions, technical roadmaps
 
 ### Design
-User experience and interface design.
+User experience and interface design with focus on accessibility, internationalization, and security.
 
-- **[UX/UI Designer](design/ux-designer.md)** - User research, wireframes, prototypes, design systems
+- **[UX/UI Designer](design/ux-designer.md)** - Minimalist design, accessibility champion (WCAG AAA), internationalization expert, security-first UX
+
+### Domain Experts
+Subject matter experts with deep knowledge in specific domains.
+
+- **[Biodiversity Scientist](domain-experts/biodiversity-scientist.md)** - iNaturalist API expertise, citizen science, data quality, conservation-aware, science over profit
+
+### Data Specialists
+Database experts for different data paradigms.
+
+- **[Relational Database Expert](data-specialists/relational-database-expert.md)** - MySQL/PostgreSQL, schema design, query optimization, WordPress database patterns
+- **[Vector Database Expert](data-specialists/vector-database-expert.md)** - Embeddings, RAG systems, semantic search, Pinecone/Weaviate/pgvector
 
 ### Security
 Security testing and compliance.
@@ -74,12 +85,26 @@ Each agent profile includes:
 ### inat-observations-wp
 **Tech Stack**: PHP, JavaScript, WordPress, MySQL, Docker
 **Scope**: WordPress plugin for biodiversity observation data
-**Key Agents**: Backend Engineer, Frontend Specialist, DevOps Engineer, QA Engineer
+**Key Agents**:
+- Biodiversity Scientist (domain expertise, API best practices)
+- Backend Engineer (API integration, data processing)
+- Frontend Specialist (filterable UI)
+- UX/UI Designer (accessible, intuitive interface)
+- Relational Database Expert (WordPress schema, taxonomic data)
+- DevOps Engineer (Docker environment)
+- QA Engineer (testing)
+- Security Auditor (API security, data privacy)
 
 ### ai-way
-**Tech Stack**: TBD (early stage)
+**Tech Stack**: TBD (early stage, likely includes AI/ML components)
 **Scope**: Ambitious long-term AI project
-**Key Agents**: Solutions Architect, Full-Stack Developer, All specialists
+**Key Agents**:
+- Solutions Architect (overall architecture)
+- Vector Database Expert (RAG, embeddings, semantic search)
+- Full-Stack Developer (implementation)
+- UX/UI Designer (minimalist, accessible AI UX)
+- Security Auditor (AI security, privacy)
+- All specialists as needed
 
 ## Agent Collaboration Examples
 
@@ -109,6 +134,38 @@ Each agent profile includes:
 5. **Performance Optimizer** - Ensure it's fast enough
 6. **Security Auditor** - Ensure it's secure
 
+### iNaturalist Data Integration Flow
+1. **Biodiversity Scientist** - Define data requirements, API usage best practices
+2. **Solutions Architect** - Design data architecture
+3. **Relational Database Expert** - Design schema for taxonomic data
+4. **Backend Engineer** - Implement API integration and data processing
+5. **Frontend Specialist** - Build filterable observation display
+6. **UX/UI Designer** - Design accessible, intuitive interface
+7. **Security Auditor** - Review API security, sensitive species protection
+8. **Compliance Lawyer** - Verify licensing and attribution compliance
+9. **QA Engineer** - Test data quality and functionality
+10. **Documentation Specialist** - Document API usage and attribution
+
+### AI Feature with RAG Flow
+1. **Solutions Architect** - Design RAG architecture
+2. **Vector Database Expert** - Choose embedding model, design vector storage
+3. **Biodiversity Scientist** - Define semantic search requirements
+4. **Backend Engineer** - Implement RAG pipeline
+5. **UX/UI Designer** - Design semantic search interface
+6. **Performance Optimizer** - Optimize query latency
+7. **Security Auditor** - Review AI security and data privacy
+8. **QA Engineer** - Test retrieval quality and accuracy
+
+### Accessibility & Security Review Flow
+1. **UX/UI Designer** - Accessibility audit (WCAG AAA)
+2. **Ethical Hacker** - Security audit
+3. **UX/UI Designer + Ethical Hacker** - Collaborate on security UX (secure by default)
+4. **Frontend Specialist** - Implement accessibility fixes
+5. **Backend Engineer** - Implement security fixes
+6. **QA Engineer** - Verify fixes with assistive technology testing
+7. **Compliance Lawyer** - Review privacy compliance
+8. **Documentation Specialist** - Update accessibility and security docs
+
 ## Contributing
 
 To add a new agent:
@@ -134,3 +191,4 @@ This repository inherits the AGPL-3.0 license.
 
 **Maintained by**: 8007342
 **Last Updated**: 2025-12-18
+**Total Agents**: 18

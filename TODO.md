@@ -1,5 +1,26 @@
 # TODO & Future Enhancements
 
+## Recent Updates (2025-12-18)
+
+### Completed
+- ✅ **Biodiversity Scientist** - Science-first expert with iNaturalist API knowledge, altruistic, conservation-aware
+- ✅ **Relational Database Expert** - MySQL/PostgreSQL specialist for ACID-compliant systems, WordPress expertise
+- ✅ **Vector Database Expert** - RAG systems, embeddings, semantic search specialist
+- ✅ **Enhanced UX/UI Designer** - Now includes accessibility (WCAG AAA), internationalization, security-first UX
+  - Minimalist design philosophy
+  - Works closely with Security Hacker
+  - Non-technical user focus
+  - Exquisite taste
+
+### New Collaboration Workflows
+- iNaturalist Data Integration Flow (10 steps)
+- AI Feature with RAG Flow (8 steps)
+- Accessibility & Security Review Flow (8 steps)
+
+**Total Agents**: 18 (was 15)
+
+---
+
 ## Pending Items
 
 ### High Priority
@@ -23,14 +44,14 @@
 ## Future Agent Ideas
 
 ### Technical Specialists
-- [ ] **Database Specialist** - Schema design, query optimization, migrations
+- [x] **Database Specialist** - COMPLETED: Split into Relational Database Expert and Vector Database Expert
 - [ ] **API Designer** - RESTful design, GraphQL, API versioning
 - [ ] **Mobile Developer** - React Native, mobile-first design
-- [ ] **Accessibility Specialist** - WCAG compliance, assistive technology
-- [ ] **Localization Expert** - i18n, l10n, multi-language support
+- [x] **Accessibility Specialist** - COMPLETED: Integrated into enhanced UX/UI Designer
+- [x] **Localization Expert** - COMPLETED: Integrated into enhanced UX/UI Designer (i18n champion)
 
 ### Domain Experts
-- [ ] **Biodiversity Expert** - iNaturalist domain knowledge, taxonomy (for inat-observations-wp)
+- [x] **Biodiversity Expert** - COMPLETED: Created as Biodiversity Scientist (science-first, altruistic)
 - [ ] **WordPress Core Contributor** - Deep WP knowledge, best practices
 - [ ] **SEO Specialist** - Search optimization, performance, metadata
 - [ ] **Analytics Expert** - Tracking, metrics, data analysis
