@@ -22,6 +22,18 @@ Comprehensive documentation for the ai-way privacy-first AI appliance:
 - **[Terminology Dictionary](ai-way-docs/terminology-dictionary.md)** - Technical terms → AJ-friendly language (CRITICAL: all agents must use this)
 - **[Privacy-First Architecture](ai-way-docs/privacy-first-architecture.md)** - Security model, threat protection, ephemeral design
 
+## Threat Research (Dangers)
+
+Comprehensive research on privacy, security, and safety risks facing AJ. **All agents building ai-way should read these documents** to understand what we're protecting against.
+
+- **[Agent Fingerprinting](dangers/AGENT_FINGERPRINTING.md)** - How behavioral patterns can identify users even with perfect anonymization
+- **[Data Leaks & Exfiltration](dangers/DATA_LEAKS.md)** - Metadata, prompt injection, model inversion, and exfiltration vectors
+- **[Correlation Attacks](dangers/CORRELATION_ATTACKS.md)** - De-anonymization through linking separate data sources
+- **[Supply Chain Risks](dangers/SUPPLY_CHAIN_RISKS.md)** - Malicious models, poisoned dependencies, backdoor attacks
+- **[The Human Factor](dangers/THE_HUMAN_FACTOR.md)** - Social engineering, cognitive biases, user error patterns
+
+Key insight: *"We cannot make AJ invisible. We can make attacks expensive. We cannot eliminate human error. We can design for human reality."*
+
 ## Agent Categories
 
 ### Developers
@@ -235,5 +247,6 @@ This repository inherits the AGPL-3.0 license.
 ---
 
 **Maintained by**: 8007342
-**Last Updated**: 2025-12-18
+**Last Updated**: 2025-12-19
 **Total Agents**: 21
+**Threat Research Documents**: 5
