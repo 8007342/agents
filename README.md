@@ -76,6 +76,7 @@ Scientific investigation of privacy, security, and emerging threats.
 Specialized roles for specific concerns.
 
 - **[Hypervisor Specialist](specialists/hypervisor-specialist.md)** - Virtualization, isolation, GPU passthrough, cross-platform appliance runtime (CRITICAL for ai-way)
+- **[Linux UX Hacker](specialists/linux-ux-hacker.md)** - Boot customization, Plymouth themes, hide scary terminal output, beautiful loading screens (CRITICAL for ai-way)
 - **[DevOps Engineer](specialists/devops-engineer.md)** - Infrastructure, CI/CD, deployment, monitoring
 - **[Documentation Specialist](specialists/documentation-specialist.md)** - Technical writing, API docs, user guides
 - **[Performance Optimizer](specialists/performance-optimizer.md)** - Profiling, optimization, caching, speed improvements
@@ -135,6 +136,7 @@ Each agent profile includes:
 
 **Key Agents**:
 - UX/UI Designer (minimalist, AJ-focused interface - CRITICAL)
+- Linux UX Hacker (beautiful boot screens, hide scary terminal text - CRITICAL)
 - Hypervisor Specialist (virtualization magic, cross-platform, GPU passthrough - CRITICAL)
 - Privacy Researcher (agent fingerprinting research, data exfiltration investigation - CRITICAL)
 - Security Auditor (privacy architecture, threat modeling, isolation boundaries - CRITICAL)
@@ -234,4 +236,4 @@ This repository inherits the AGPL-3.0 license.
 
 **Maintained by**: 8007342
 **Last Updated**: 2025-12-18
-**Total Agents**: 20
+**Total Agents**: 21
