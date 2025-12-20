@@ -14,6 +14,105 @@ It follows AJ through their day. Pops up on the fridge screen while they're cook
 
 **Max Headroom, but yours. Private. Local. Alive.**
 
+---
+
+## Distribution: Adopt an AI Pet
+
+Forget "download an AI assistant." That's cold. Corporate. Forgettable.
+
+**You adopt Yollayah.**
+
+Like a Tamagotchi, but useful. An AI pet that does AI right:
+- Lives on your devices
+- Learns your preferences
+- Grows with you (unlockable accessories, personality evolution)
+- Needs no cloud, no subscription, no surveillance
+
+### The Emotional Hook
+
+| Traditional AI | Yollayah |
+|---------------|----------|
+| "Install assistant" | "Adopt your axolotl" |
+| Tool you use | Companion that lives with you |
+| Corporate branding | Your pet, your name for it |
+| Subscription fee | One-time adoption (FOSS) |
+| Lives in the cloud | Lives in your home |
+
+### Beyond Productivity
+
+Yollayah isn't just for "work tasks." It's a **home companion**:
+
+**Music control:**
+> "Yollayah, play something chill"
+> *Yollayah splashes happily, music starts*
+
+**Home Assistant integration:**
+> "Yollayah, dim the lights"
+> *Yollayah dives, lights fade*
+> "Yollayah, is the garage door closed?"
+> *Yollayah checks, gives a thumbs-up fin gesture*
+
+**Ambient presence:**
+> Yollayah floats on the kitchen display while you cook
+> Offers recipe suggestions if you ask
+> Otherwise just... vibes. Keeps you company.
+
+**Morning routine:**
+> "Morning, Yollayah"
+> "Morning! Weather's clear, no meetings until 10, and your coffee maker is ready."
+> *Yollayah stretches, ready for the day*
+
+### The Privacy-First Smart Home
+
+Current smart home options:
+- **Alexa**: Amazon listens to everything
+- **Google Home**: Google listens to everything
+- **Siri**: Apple listens to... less, but still cloud-dependent
+
+**Yollayah**:
+- Runs entirely local
+- Home Assistant integration via local API (no cloud)
+- Voice processing on-device
+- Never phones home
+- Your home automation data stays in your home
+
+This is the killer app: **a smart home assistant that isn't spying on you**.
+
+### Adoption Flow (Future)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    ADOPT YOLLAYAH                                │
+│                                                                  │
+│   ┌─────────────────────────────────────────────────────────┐   │
+│   │                                                         │   │
+│   │     ░░▓▓░░░░░░░░░░▓▓░░                                 │   │
+│   │     ░▓██▓░░░░░░░░▓██▓░     Hi! I'm Yollayah.           │   │
+│   │     ░░▓▓░░░░░░░░░░▓▓░░                                 │   │
+│   │     ░░░░██ ◕◕ ██░░░░░░     Want to give me a name?     │   │
+│   │     ░░░░░▓▓▓▓▓▓░░░░░░░                                 │   │
+│   │                            [Keep "Yollayah"]            │   │
+│   │                            [Name me something else]     │   │
+│   │                                                         │   │
+│   └─────────────────────────────────────────────────────────┘   │
+│                                                                  │
+│   This is the ONLY question on first launch.                    │
+│   Everything else just works.                                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Growth & Bonding
+
+Over time, Yollayah can:
+- **Unlock accessories**: Tiny hats, glasses, seasonal outfits (earned, not bought)
+- **Remember preferences**: "You usually want coffee updates around now"
+- **Develop quirks**: Personal animations, favorite phrases
+- **Celebrate milestones**: "We've been together 100 days!"
+
+None of this requires cloud. All stored locally. All private.
+
+---
+
 ### The Avatar: Pixelated Axolotl
 
 Yollayah takes the form of a **pixelated axolotl** — the endangered salamander native to the lakes of Xochimilco, Mexico.
