@@ -8,7 +8,7 @@
 
 Screens everywhere. Kitchen. Living room. Office. Garage. Bathroom mirror. Car dashboard. Smartwatch. That old tablet gathering dust.
 
-AI-WAY's avatar — whatever AJ named it — lives across all of them. Not trapped in one device. Not a disembodied voice. A *presence*.
+**Yollayah** — "heart that goes with you" in Nahuatl — lives across all of them. Not trapped in one device. Not a disembodied voice. A *presence*.
 
 It follows AJ through their day. Pops up on the fridge screen while they're cooking. Waves from the workshop monitor when they're building. Appears on the bedside tablet to say goodnight. Seamlessly. Naturally. Like a companion that exists in the space, not in a box.
 
@@ -46,26 +46,26 @@ It follows AJ through their day. Pops up on the fridge screen while they're cook
 ### Scenarios
 
 **Morning:**
-> AJ walks into kitchen. Avatar appears on the fridge display.
+> AJ walks into kitchen. Yollayah appears on the fridge display.
 > "Morning! Weather's nice. Your 10am got moved to 11."
 > AJ grunts, pours coffee.
-> Avatar: "I'll be quiet."
+> Yollayah: "I'll be quiet."
 
 **Workshop:**
 > AJ is building a cabinet. Sawdust everywhere.
-> Avatar pops up on the dusty shop monitor.
+> Yollayah pops up on the dusty shop monitor.
 > "Want me to find that dovetail joint video again?"
 > AJ: "Yeah, the one with the hand tools."
-> Avatar: "On it. I'll keep it on screen while you work."
+> Yollayah: "On it. I'll keep it on screen while you work."
 
 **Late night:**
 > AJ can't sleep. Scrolling phone in bed.
-> Avatar appears, dimmed, soft voice.
+> Yollayah appears, dimmed, soft voice.
 > "Trouble sleeping? Want me to read something boring until you drift off?"
 
 **Context-aware:**
 > AJ's in the garage, hands covered in grease.
-> Avatar knows not to expect touch input.
+> Yollayah knows not to expect touch input.
 > "I'll just listen. Say 'hey' when you need me."
 
 ---

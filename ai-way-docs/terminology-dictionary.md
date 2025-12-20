@@ -170,7 +170,8 @@ These are **internal development terms**. AJ never sees these — they interact 
 
 | Internal Term | What AJ Experiences | Notes |
 |---------------|---------------------|-------|
-| Conductor / Meta-agent | **[AJ's pet name]** | AJ names their own assistant. Could be "Buddy", "Friday", "Helper", whatever feels right to them. We never impose a name. |
+| Conductor / Meta-agent | **Yollayah** (default) | Nahuatl: "heart that goes with you." AJ can rename to anything they like. |
+| Ambient Companion | **Yollayah** | Technical term for the avatar presence across screens. AJ just sees their companion. |
 | Agent / Specialist Agent | **Helper** or (hidden) | "I'll get some help with that" — AJ doesn't need to know about agent architecture |
 | Agent handoff | (hidden) | Seamless. AJ just sees continuous conversation. |
 | Agent routing | (hidden) | Automatic. AJ never chooses agents manually. |
@@ -187,17 +188,17 @@ These are **internal development terms**. AJ never sees these — they interact 
 
 ### The Naming Principle
 
-AJ gets to name their AI companion. We provide a friendly default (TBD), but:
+The default name is **Yollayah** (Nahuatl: "heart that goes with you").
 
-- AJ can rename it to anything
+- AJ can rename it to anything they prefer
 - The name persists across sessions (if AJ enables memory)
 - The AI responds to its given name
 - We **never** call it "Conductor" or "Meta-agent" in UI
 
 **Example interaction:**
-> AJ: "Hey Buddy, can you help with my taxes?"
-> Buddy: "Sure! Let me look at your documents..."
-> *(internally: Conductor routes to tax-specialist agent, AJ sees continuous "Buddy" conversation)*
+> AJ: "Hey Yollayah, can you help with my taxes?"
+> Yollayah: "Sure! Let me look at your documents..."
+> *(internally: Conductor routes to tax-specialist agent, AJ sees continuous Yollayah conversation)*
 
 ## Technical Concepts (Hidden)
 
