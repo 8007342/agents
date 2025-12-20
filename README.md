@@ -34,6 +34,14 @@ Comprehensive research on privacy, security, and safety risks facing AJ. **All a
 
 Key insight: *"We cannot make AJ invisible. We can make attacks expensive. We cannot eliminate human error. We can design for human reality."*
 
+## Client Configurations
+
+Configuration guides for running AI agents in different environments:
+
+- **[Claude Client](clients/CLAUDE.md)** - Sandboxed Claude Code on Fedora Silverblue: distrobox jails, permission bypass, deny-lists, OS-level isolation
+- **[AI-WAY Client](clients/AI-WAY.md)** - (Placeholder) Unified orchestration layer for curated agents
+- **[Docker Client](clients/DOCKER.md)** - (Placeholder) Local inference with Ollama/Docker for developers with GPU hardware
+
 ## Agent Categories
 
 ### Developers
