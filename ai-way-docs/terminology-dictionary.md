@@ -164,6 +164,41 @@ This dictionary translates technical terms into language Average Joe (AJ) unders
 | Exit Code / Error Code | (hidden!) | Never show to AJ |
 | Failed to connect | **Can't reach that** | Should never happen (offline!) |
 
+## AI-WAY Internal Architecture (Hidden)
+
+These are **internal development terms**. AJ never sees these — they interact with friendly abstractions.
+
+| Internal Term | What AJ Experiences | Notes |
+|---------------|---------------------|-------|
+| Conductor / Meta-agent | **[AJ's pet name]** | AJ names their own assistant. Could be "Buddy", "Friday", "Helper", whatever feels right to them. We never impose a name. |
+| Agent / Specialist Agent | **Helper** or (hidden) | "I'll get some help with that" — AJ doesn't need to know about agent architecture |
+| Agent handoff | (hidden) | Seamless. AJ just sees continuous conversation. |
+| Agent routing | (hidden) | Automatic. AJ never chooses agents manually. |
+| Context scope | (hidden) | Memory just works. AJ doesn't manage scopes. |
+| Session / Task / Global context | (hidden) | Implementation detail |
+| Firehose / Bulk ingestion | (hidden) | Data just appears fresh. AJ doesn't know about ingestion patterns. |
+| Query-pattern fingerprinting | (hidden) | Privacy protection is automatic, not explained. |
+| Asimov's Laws | (hidden) | Safety is built-in, not advertised. |
+| Ephemeral storage | **"Gone when you close"** | Simple explanation only if AJ asks where data went |
+| System prompt | (hidden) | AJ doesn't know about prompt engineering |
+| RAG pipeline | **"Looking at your files"** | Just describe the action, not the mechanism |
+| Embeddings / Vectors | (hidden) | Never mention |
+| Local inference | **"On your computer"** | Only if AJ asks about privacy |
+
+### The Naming Principle
+
+AJ gets to name their AI companion. We provide a friendly default (TBD), but:
+
+- AJ can rename it to anything
+- The name persists across sessions (if AJ enables memory)
+- The AI responds to its given name
+- We **never** call it "Conductor" or "Meta-agent" in UI
+
+**Example interaction:**
+> AJ: "Hey Buddy, can you help with my taxes?"
+> Buddy: "Sure! Let me look at your documents..."
+> *(internally: Conductor routes to tax-specialist agent, AJ sees continuous "Buddy" conversation)*
+
 ## Technical Concepts (Hidden)
 
 These concepts should NEVER be mentioned to AJ in any form:
