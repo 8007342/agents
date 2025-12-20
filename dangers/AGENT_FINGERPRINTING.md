@@ -8,6 +8,8 @@
 
 **The hard truth:** Complete anonymity may be impossible. Our goal is harm reduction—making fingerprinting as difficult as possible while educating AJ about residual risks.
 
+**Related**: This document covers *behavioral* fingerprinting (how AJ uses AI). For *query-pattern* fingerprinting (how data requests reveal interests), see [Anonymous Data Ingestion](../ai-way-docs/anonymous-data-ingestion.md).
+
 ---
 
 ## Table of Contents

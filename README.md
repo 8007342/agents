@@ -21,6 +21,7 @@ Comprehensive documentation for the ai-way privacy-first AI appliance:
 - **[Appliance Overview](ai-way-docs/appliance-overview.md)** - Complete product vision, architecture, and roadmap
 - **[Terminology Dictionary](ai-way-docs/terminology-dictionary.md)** - Technical terms → AJ-friendly language (CRITICAL: all agents must use this)
 - **[Privacy-First Architecture](ai-way-docs/privacy-first-architecture.md)** - Security model, threat protection, ephemeral design
+- **[Anonymous Data Ingestion](ai-way-docs/anonymous-data-ingestion.md)** - Bulk firehose patterns, query-pattern fingerprinting prevention, the AI-WAY
 
 ## Threat Research (Dangers)
 
