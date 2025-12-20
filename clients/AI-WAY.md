@@ -2,15 +2,16 @@
 
 **Status**: Placeholder - Architecture in development
 
-AI-WAY is the unified orchestration layer for curated AI agents. It provides a privacy-first, local-only interface for coordinating specialized agents to accomplish complex tasks.
+AI-WAY is the unified orchestration layer for curated AI agents. It provides a privacy-first, **fully offline** interface for coordinating specialized agents to accomplish complex tasks.
 
 ## Vision
 
 AI-WAY serves as the conductor, routing tasks to the right specialized agents while maintaining:
 
-- **Privacy**: All inference local, all data ephemeral
+- **Privacy**: All inference local, all data ephemeral, **zero network calls**
 - **Simplicity**: AJ-friendly interface (drag-drop, natural language)
 - **Power**: Access to full agent ecosystem without complexity
+- **Offline**: Works without internet, always
 
 ---
 
@@ -28,10 +29,10 @@ AI-WAY serves as the conductor, routing tasks to the right specialized agents wh
 │  └─────────────────────────────────────────────────────────────┘│
 │                              │                                   │
 │  ┌───────────────────────────┴───────────────────────────────┐  │
-│  │                    AGENT REGISTRY                          │  │
+│  │                    LOCAL INFERENCE BACKENDS                │  │
 │  │  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐       │  │
-│  │  │ Claude  │  │ Ollama  │  │ Custom  │  │ Future  │       │  │
-│  │  │ Client  │  │ Client  │  │ Agents  │  │ Agents  │       │  │
+│  │  │ Ollama  │  │ llama   │  │ Custom  │  │ Future  │       │  │
+│  │  │         │  │  .cpp   │  │ Models  │  │ Local   │       │  │
 │  │  └─────────┘  └─────────┘  └─────────┘  └─────────┘       │  │
 │  └───────────────────────────────────────────────────────────┘  │
 │                              │                                   │
@@ -41,6 +42,11 @@ AI-WAY serves as the conductor, routing tasks to the right specialized agents wh
 │  │  data-specialists/ | domain-experts/ | research/ | qa/    │  │
 │  └───────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
+
+                    ╔═══════════════════════╗
+                    ║  NO NETWORK ACCESS    ║
+                    ║  ALL LOCAL INFERENCE  ║
+                    ╚═══════════════════════╝
 ```
 
 ---
@@ -75,35 +81,37 @@ AI-WAY Orchestration:
 
 ---
 
-## Client Integration Points
+## Local Inference Backends
 
-AI-WAY will integrate with multiple inference backends:
+AI-WAY runs entirely on local hardware with no network dependencies:
 
-### Claude Client (Primary)
-- Full-featured, cloud-connected agent
-- Best for complex reasoning tasks
-- Sandboxed via [CLAUDE.md](CLAUDE.md) configuration
-
-### Ollama/Docker Client (Local)
-- Privacy-first, fully offline
-- Good for routine tasks, document processing
+### Ollama (Primary)
+- Simple model management
+- GPU acceleration (NVIDIA, AMD, Apple Silicon)
+- Wide model selection (Llama, Mistral, CodeLlama, etc.)
 - Configured via [DOCKER.md](DOCKER.md)
 
-### Future Clients
-- Custom fine-tuned models
+### llama.cpp (Alternative)
+- Minimal dependencies
+- Excellent quantization support
+- Direct binary execution
+
+### Future Backends
+- Custom fine-tuned models for specific agent roles
 - Specialized domain models
-- Federated agents
+- Hardware-optimized inference engines
 
 ---
 
 ## Privacy Architecture
 
-AI-WAY inherits the privacy principles from the agents repository:
+AI-WAY enforces strict privacy by design:
 
-1. **Local-first**: Prefer local inference when capable
-2. **Ephemeral**: Session data destroyed on close
-3. **Transparent**: User sees which agents are used
-4. **Auditable**: All agent interactions logged locally
+1. **Offline-only**: No network access, ever
+2. **Local inference**: All AI runs on user's hardware
+3. **Ephemeral**: Session data destroyed on close
+4. **Transparent**: User sees which agents are used
+5. **Auditable**: All agent interactions logged locally
 
 ### Data Flow
 
@@ -115,14 +123,12 @@ User Input
 │  AI-WAY Router   │  ← Runs locally
 └────────┬─────────┘
          │
-    ┌────┴────┐
-    ▼         ▼
-┌───────┐  ┌───────┐
-│Claude │  │Ollama │
-│(cloud)│  │(local)│
-└───┬───┘  └───┬───┘
-    │          │
-    └────┬─────┘
+         ▼
+┌──────────────────┐
+│  Local Inference │  ← Ollama / llama.cpp
+│    (on device)   │
+└────────┬─────────┘
+         │
          ▼
 ┌──────────────────┐
 │ Result Aggregator│  ← Runs locally
@@ -133,6 +139,10 @@ User Input
          │
          ▼
     [Ephemeral - destroyed on session end]
+
+    ╔════════════════════════════════╗
+    ║  NETWORK: DISABLED / BLOCKED   ║
+    ╚════════════════════════════════╝
 ```
 
 ---
@@ -149,19 +159,19 @@ User Input
 - [ ] Agent selection algorithm
 - [ ] Basic routing logic
 
-### Phase 3: Client Integration
-- [ ] Claude client integration
-- [ ] Ollama client integration
-- [ ] Unified API
+### Phase 3: Local Inference Integration
+- [ ] Ollama integration
+- [ ] llama.cpp integration
+- [ ] Unified local API
 
 ### Phase 4: User Interface
 - [ ] CLI interface
-- [ ] Web interface (local only)
+- [ ] Local web interface (localhost only)
 - [ ] AJ-friendly drag-drop UI
 
 ### Phase 5: Advanced Features
 - [ ] Agent collaboration protocols
-- [ ] Context persistence (opt-in)
+- [ ] Context persistence (opt-in, local only)
 - [ ] Custom agent registration
 
 ---
@@ -171,22 +181,24 @@ User Input
 ```yaml
 # ai-way.config.yaml (draft)
 orchestration:
-  default_client: claude
-  fallback_client: ollama
-  privacy_mode: strict  # strict | balanced | performance
+  default_backend: ollama
+  privacy_mode: strict  # strict only - no cloud options
 
-clients:
-  claude:
-    config_path: ~/.claude/settings.json
-    sandbox: distrobox
-    permissions: bypassPermissions
-
+backends:
   ollama:
     endpoint: http://localhost:11434
     models:
       default: llama3.1:70b
       fast: llama3.1:8b
       code: codellama:34b
+
+  llama_cpp:
+    model_path: ~/.ai-way/models/
+    default_model: llama-3.1-70b-q4_k_m.gguf
+
+network:
+  enabled: false  # AI-WAY never needs network
+  block_outbound: true  # Enforce at OS level
 
 agents:
   registry: ./agents/
@@ -209,15 +221,14 @@ routing:
 1. **Agent Communication Protocol**: How do agents share context?
 2. **Result Merging**: How to combine outputs from multiple agents?
 3. **Conflict Resolution**: When agents disagree, who wins?
-4. **Resource Allocation**: How to balance cloud vs local inference?
+4. **Model Selection**: How to auto-select best local model for task?
 5. **User Preferences**: How does AJ customize agent behavior?
 
 ---
 
 ## See Also
 
-- [Claude Client](CLAUDE.md) - Sandboxed Claude Code configuration
-- [Docker Client](DOCKER.md) - Local ollama/docker setup
+- [Docker Client](DOCKER.md) - Local Ollama/Docker setup for developers
 - [Appliance Overview](../ai-way-docs/appliance-overview.md) - Full product vision
 - [Privacy Architecture](../ai-way-docs/privacy-first-architecture.md) - Security model
 
@@ -225,4 +236,4 @@ routing:
 
 **Status**: Placeholder
 **Maintained by**: 8007342
-**Last Updated**: 2025-12-19
+**Last Updated**: 2025-12-20
