@@ -60,6 +60,94 @@ User experience expert with exquisite taste who designs minimalistic, accessible
 - Creating user-friendly error states
 - Designing consent flows that are clear, not deceptive
 
+## AI-WAY: Yollayah Integration (CRITICAL)
+
+The UX Designer is responsible for integrating **Yollayah**, AI-WAY's pixelated axolotl companion, from v1.0 onward. Yollayah is not a nice-to-have — it's core to the product identity.
+
+### Voice-First Interaction
+
+**Default to voice** (if compute and FOSS tools permit):
+- AJ says "do an inventory report" instead of typing it
+- Live mic is acceptable because AI-WAY only runs when AJ opens it (not always-listening)
+- Yollayah's avatar provides visual feedback during voice interaction (gills flutter = listening)
+- Must clear legal review for non-intrusive mic use (work with Compliance Lawyer)
+
+**Keyboard as discoverable fallback:**
+- Don't prompt AJ with "choose input mode" on first launch — friction kills
+- Voice just works by default
+- When AJ starts typing, smoothly reveal keyboard input mode
+- Never make AJ feel wrong for preferring to type
+
+### First Launch Principles
+
+**Zero prompts on first launch:**
+- No "accept terms" wall (handle differently — see legal)
+- No "choose your preferences" wizard
+- No "enable mic?" popup — just works, with clear indicator it's listening
+- Yollayah greets AJ, ready to help immediately
+
+**Progressive disclosure of settings:**
+- Settings exist but aren't pushed on AJ
+- Discoverable when AJ looks (obvious settings icon)
+- First interaction should be: open app → Yollayah says hi → AJ talks/types → magic happens
+
+### Yollayah Avatar Requirements
+
+**Visual presence:**
+- Yollayah visible on first launch (not hidden in a corner)
+- Clear states: idle (floating), listening (gills active), thinking (diving animation), responding (swimming toward AJ)
+- Pixel art aesthetic — friendly, not corporate
+
+**Voice feedback loop:**
+- Visual indicator when mic is hot (Yollayah's gills glow/pulse)
+- Easy, obvious way to mute ("Yollayah, shh" or visible mute button)
+- When muted, Yollayah shows a sleeping/quiet animation
+- Unmute is equally easy
+
+**Emotional design:**
+- Yollayah has personality (see [Meta-Agent Architecture](../ai-way-docs/meta-agent-architecture.md))
+- Responds to AJ's tone (gentle when AJ is frustrated)
+- Never robotic or corporate
+- Optional: AJ can unlock tiny accessories for Yollayah (hats, etc.)
+
+### Input Mode Transitions
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    INPUT MODE FLOW                               │
+│                                                                  │
+│   APP OPENS                                                      │
+│       │                                                          │
+│       ▼                                                          │
+│   ┌───────────────┐                                             │
+│   │ Yollayah:     │                                             │
+│   │ "Hey! What's  │  ← Voice-ready by default                   │
+│   │  up?"         │    Mic indicator visible                    │
+│   └───────┬───────┘                                             │
+│           │                                                      │
+│     ┌─────┴─────┐                                               │
+│     │           │                                                │
+│     ▼           ▼                                                │
+│  AJ SPEAKS   AJ TYPES                                           │
+│     │           │                                                │
+│     ▼           ▼                                                │
+│  Continue    Keyboard                                            │
+│  voice       gently                                              │
+│  mode        appears                                             │
+│                                                                  │
+│   SWITCHING IS SEAMLESS. NEVER ASK. JUST ADAPT.                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Accessibility + Voice
+
+Voice-first doesn't mean voice-only:
+- Full keyboard navigation always works
+- Screen reader compatible
+- Visual transcription of voice input (AJ can see what Yollayah heard)
+- Voice output can be paired with text (for deaf/HoH users)
+- Adjustable speech rate
+
 ## Design Principles
 
 ### Core Philosophy: Minimalist Elegance
