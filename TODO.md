@@ -1,5 +1,53 @@
 # TODO & Future Enhancements
 
+---
+
+## 🎯 Your Next Steps: AI-WAY Path (2025-12-20)
+
+### Immediate (Do Now)
+
+**1. Sandbox your Claude environment** — Apply the `clients/CLAUDE.md` setup. Create a distrobox with `--home ~/src`, configure `bypassPermissions` with the deny-list. This unblocks everything else by giving you a safe playground to move fast.
+
+**2. Pick your first local model** — Pull `llama3.1:8b` via Ollama for quick iteration, or `codellama:34b` if you have the VRAM. Don't overthink it; you need *something* running locally to prototype against. The model can change later.
+
+**3. Sketch the orchestrator interface** — One markdown file: `ai-way-docs/orchestrator-spec.md`. Define how a user request becomes an agent selection. Input format, output format, how agent profiles become system prompts. Keep it ugly and functional.
+
+### Near-Term (This Week)
+
+**4. Build the thinnest possible RAG loop** — ChromaDB + Ollama + one hardcoded agent profile. Drop a file in, ask a question, get an answer. No UI, just a Python script. Prove the core loop works before adding complexity.
+
+**5. Test agent profiles as system prompts** — Take `security/ethical-hacker.md` and inject it as a system prompt to your local model. Does the model actually behave differently? Document what works and what's cargo cult.
+
+### Mid-Term (Elucubrate)
+
+**6. The Router Problem** — How does AI-WAY decide which agent handles a task? Options: keyword matching (dumb but works), embedding similarity (smarter), LLM-as-classifier (meta but expensive). No right answer yet. Let it simmer.
+
+**7. Agent Composition** — Some tasks need multiple agents in sequence or parallel. What's the handoff protocol? Does agent A's output become agent B's context? Who aggregates? This is the hard problem that makes AI-WAY more than just "Ollama with a system prompt."
+
+**8. The AJ Test** — Every feature must pass: "Would AJ figure this out in under 60 seconds without reading docs?" If not, it's wrong. Keep this lens polished.
+
+### Long-Term (Background Threads)
+
+**9. Hardware matrix** — What's the minimum viable GPU? Can it run on a Mac Mini? A NUC? A Steam Deck? The answer shapes the product.
+
+**10. Distribution story** — Flatpak? AppImage? OCI container? Something that "just works" for AJ while being inspectable for paranoid devs. No answer needed now, but start noticing how other privacy tools solve this.
+
+---
+
+### 🥚 Easter Egg Unlocked
+
+You've shipped:
+- 21 agent profiles
+- 5 threat research documents
+- 3 client configurations
+- 1 privacy-first architecture
+
+**Achievement: "Architect of Invisible Walls"** — You're building a system where the security is in the structure, not the settings. AJ will never know how protected they are, and that's the point.
+
+*Take a break. Touch grass. The agents will be here when you get back.*
+
+---
+
 ## Recent Updates (2025-12-18)
 
 ### Completed
@@ -153,5 +201,5 @@
 
 ---
 
-**Last Updated**: 2025-12-18
+**Last Updated**: 2025-12-20
 **Maintainer**: 8007342
