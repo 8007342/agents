@@ -172,6 +172,7 @@ These are **internal development terms**. AJ never sees these — they interact 
 |---------------|---------------------|-------|
 | Conductor / Meta-agent | **Yollayah** (default) | Nahuatl: "heart that goes with you." AJ can rename to anything they like. |
 | Ambient Companion | **Yollayah** | Technical term for the avatar presence across screens. AJ just sees their companion. |
+| Avatar | **Pixelated axolotl** | Yollayah appears as a pixel art axolotl (āxōlōtl = Nahuatl "water monster"). Swims between screens. |
 | Agent / Specialist Agent | **Helper** or (hidden) | "I'll get some help with that" — AJ doesn't need to know about agent architecture |
 | Agent handoff | (hidden) | Seamless. AJ just sees continuous conversation. |
 | Agent routing | (hidden) | Automatic. AJ never chooses agents manually. |

@@ -14,6 +14,37 @@ It follows AJ through their day. Pops up on the fridge screen while they're cook
 
 **Max Headroom, but yours. Private. Local. Alive.**
 
+### The Avatar: Pixelated Axolotl
+
+Yollayah takes the form of a **pixelated axolotl** — the endangered salamander native to the lakes of Xochimilco, Mexico.
+
+Why axolotl?
+- **Nahuatl origins**: āxōlōtl means "water monster" — matches Yollayah's Nahuatl name
+- **Regenerative**: Axolotls can regrow limbs — symbolizes resilience, fresh starts
+- **Friendly appearance**: Those feathery gills, that smile — approachable, not threatening
+- **Unique**: Not another generic robot or orb — unmistakably AI-WAY
+- **Pixelated**: Retro aesthetic, runs on any screen, avoids uncanny valley entirely
+
+```
+    ░░░░░░░░░░░░░░░░░░
+    ░░▓▓░░░░░░░░░░▓▓░░
+    ░▓██▓░░░░░░░░▓██▓░     Yollayah
+    ░░▓▓░░░░░░░░░░▓▓░░     "Heart that goes with you"
+    ░░░░░░████░░░░░░░░
+    ░░░░██░░░░██░░░░░░     ← pixelated axolotl
+    ░░░░██ ◕◕ ██░░░░░░       frolicking across
+    ░░░░░██░░██░░░░░░░       your screens
+    ░░░░░░████░░░░░░░░
+    ░░░░░░░██░░░░░░░░░
+    ░░░░░▓▓▓▓▓▓░░░░░░░
+```
+
+The axolotl can:
+- Swim across screens (enters from edges, exits to adjacent displays)
+- Express emotions through gill movements, eye changes, body posture
+- "Splash" when excited, "float" when idle, "dive" when thinking
+- Wear tiny accessories AJ unlocks or creates (hats, glasses, etc.)
+
 ---
 
 ## What This Looks Like
@@ -129,16 +160,19 @@ How does the avatar know where AJ is?
 
 ### Avatar Rendering
 
-Options for generating the visual:
+The pixelated axolotl is deliberately low-fi:
 
 | Approach | Compute | Quality | Notes |
 |----------|---------|---------|-------|
-| Pre-rendered sprites | Low | Medium | Limited expressions, works anywhere |
-| Real-time 2D animation | Medium | Good | Like VTuber tech, runs on hub |
-| 3D rendered | High | Excellent | Needs good GPU |
-| AI-generated frames | Very High | Variable | Bleeding edge, probably overkill |
+| **Pixel art sprites** | Very Low | Perfect | Chosen approach. Works on anything. |
+| Pre-rendered animations | Low | Good | Sprite sheets for common actions |
+| Real-time procedural | Medium | Good | Fluid swimming, reactive gills |
 
-**Recommendation**: Start with 2D animation. It's expressive, efficient, and doesn't fall into uncanny valley.
+**Decision**: Pixel art sprites with procedural touches. The constraints are features:
+- Runs on a Raspberry Pi display
+- Looks intentional, not cheap
+- Timeless aesthetic (pixel art ages well)
+- Easy for community to create custom sprites/accessories
 
 ### Voice
 
