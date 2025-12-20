@@ -22,6 +22,7 @@ Comprehensive documentation for the ai-way privacy-first AI appliance:
 - **[Terminology Dictionary](ai-way-docs/terminology-dictionary.md)** - Technical terms → AJ-friendly language (CRITICAL: all agents must use this)
 - **[Privacy-First Architecture](ai-way-docs/privacy-first-architecture.md)** - Security model, threat protection, ephemeral design
 - **[Anonymous Data Ingestion](ai-way-docs/anonymous-data-ingestion.md)** - Bulk firehose patterns, query-pattern fingerprinting prevention, the AI-WAY
+- **[Meta-Agent Architecture](ai-way-docs/meta-agent-architecture.md)** - The Conductor: routing, safety (Asimov's Laws), context scopes, agent handoff
 
 ## Threat Research (Dangers)
 
