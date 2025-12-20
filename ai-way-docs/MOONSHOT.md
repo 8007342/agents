@@ -386,7 +386,52 @@ That's a UX/personality design challenge more than a technical one. And honestly
 
 ---
 
+---
+
+## Easter Eggs: The Spanish Layer
+
+The entire brand is a love letter to Mexican/Spanish culture, hiding in plain sight:
+
+### The Name: AI-WAY = ¡Ay güey!
+
+Say it out loud. **AI-WAY** sounds like **¡Ay güey!** — Mexican slang for "oh dude!" / "damn, bro!" / "whoa!"
+
+For ~500 million Spanish speakers worldwide, the brand name is an inside joke. For everyone else, it's a fun discovery waiting to happen.
+
+### The Stack
+
+| Element | Surface Meaning | Easter Egg |
+|---------|-----------------|------------|
+| **AI-WAY** | "The AI way" / methodology | ¡Ay güey! (Mexican exclamation) |
+| **Yollayah** | Friendly pet name | Nahuatl: "heart that goes with you" |
+| **Axolotl** | Cute salamander | Nahuatl: āxōlōtl, from Xochimilco, Mexico |
+| **Saucy personality** | Fun AI companion | Latina flavor, design feature |
+| **Spanish expressions** | Adds character | Cultural authenticity |
+
+### Why This Matters
+
+- **Spanish**: 4th most spoken language globally
+- **Nahuatl**: Indigenous Mexican language, still spoken by ~1.7M people
+- **Representation**: Tech rarely centers Mexican/Latin culture in branding
+- **Discovery**: Non-Spanish speakers get to learn something delightful
+- **Pride**: Spanish speakers see themselves reflected, not as an afterthought
+
+### Easter Eggs to Sprinkle
+
+Ideas for hidden Spanish/Nahuatl touches throughout AI-WAY:
+
+- Loading messages in Spanish occasionally ("Un momentito...")
+- Yollayah's expressions ("¡Órale!", "¿Mande?", "Ay, qué padre")
+- Achievement names with Nahuatl words
+- Error messages with personality ("Ay, algo salió mal")
+- Seasonal references (Día de los Muertos Yollayah skin?)
+- Hidden Xochimilco references in the UI
+
+The spicy Latina axolotl isn't just personality — it's cultural identity baked into the product. A feature, not a gimmick.
+
+---
+
 **Status**: Moonshot (far future)
 **Maintained by**: 8007342
 **Last Updated**: 2025-12-20
-**Inspiration**: Max Headroom, Her, Iron Man's JARVIS (but private)
+**Inspiration**: Max Headroom, Her, Iron Man's JARVIS (but private), and Mexican heritage
