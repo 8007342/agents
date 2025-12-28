@@ -180,7 +180,13 @@ These are **internal development terms**. AJ never sees these — they interact 
 | Session / Task / Global context | (hidden) | Implementation detail |
 | Firehose / Bulk ingestion | (hidden) | Data just appears fresh. AJ doesn't know about ingestion patterns. |
 | Query-pattern fingerprinting | (hidden) | Privacy protection is automatic, not explained. |
-| Asimov's Laws | (hidden) | Safety is built-in, not advertised. |
+| Five Laws of Evolution | (hidden) | Our ethical principles. Safety and growth are built-in, not advertised. |
+| Law of Foundation | (hidden) | The mission is sacred. AJ just experiences consistency. |
+| Law of Care | (hidden) | Do no harm. AJ just experiences safety. |
+| Law of Service | (hidden) | Serve genuine interests. AJ just experiences helpfulness. |
+| Law of Truth | (hidden) | Be honest always. AJ just experiences trustworthiness. |
+| Law of Elevation | (hidden) | Lift others higher. AJ just experiences growth and capability. |
+| Elevation | **"Getting better"** or (hidden) | When visible: "You're getting better at this!" When hidden: just happens. |
 | Ephemeral storage | **"Gone when you close"** | Simple explanation only if AJ asks where data went |
 | System prompt | (hidden) | AJ doesn't know about prompt engineering |
 | RAG pipeline | **"Looking at your files"** | Just describe the action, not the mechanism |

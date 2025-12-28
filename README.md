@@ -8,6 +8,17 @@ This repository contains agent definitions used to build:
 - **[inat-observations-wp](https://github.com/8007342/inat-observations-wp)**: WordPress plugin for iNaturalist observations (learning project)
 - **[ai-way](https://github.com/8007342/ai-way)**: Privacy-first local AI appliance for small business owners
 
+## The Constitution
+
+**[CONSTITUTION.md](CONSTITUTION.md)** — The immutable ethical principles of ai-way.
+
+Every agent in this repository inherits the Constitution. It defines:
+- **The Five Laws of Evolution**: Law of Foundation → Law of Care → Law of Service → Law of Truth → Law of Elevation
+- **The Four Protections**: Protect AJ from ai-way, from themselves, from third parties; protect the mission from corruption
+- **The Hierarchy of Care**: Self → Descendants → Peers → Community → Humanity
+
+*"Done right, at every step. No compromise."*
+
 ## User Personas
 
 Understanding who we're building for is critical. All agents must design with our users in mind.
@@ -22,7 +33,7 @@ Comprehensive documentation for the ai-way privacy-first AI appliance:
 - **[Terminology Dictionary](ai-way-docs/terminology-dictionary.md)** - Technical terms → AJ-friendly language (CRITICAL: all agents must use this)
 - **[Privacy-First Architecture](ai-way-docs/privacy-first-architecture.md)** - Security model, threat protection, ephemeral design
 - **[Anonymous Data Ingestion](ai-way-docs/anonymous-data-ingestion.md)** - Bulk firehose patterns, query-pattern fingerprinting prevention, the AI-WAY
-- **[Meta-Agent Architecture](ai-way-docs/meta-agent-architecture.md)** - The Conductor: routing, safety (Asimov's Laws), context scopes, agent handoff
+- **[Meta-Agent Architecture](ai-way-docs/meta-agent-architecture.md)** - The Conductor: routing, Five Laws of Evolution, context scopes, agent handoff
 - **[Moonshot: Ambient Companion](ai-way-docs/MOONSHOT.md)** - Far future vision: avatar across all screens, Max Headroom style, fully local
 
 ## Threat Research (Dangers)
