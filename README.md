@@ -23,7 +23,7 @@ Every agent in this repository inherits the Constitution. It defines:
 
 Understanding who we're building for is critical. All agents must design with our users in mind.
 
-- **[Average Joe (AJ)](personas/average-joe.md)** - Primary user for ai-way: small business owner, minimal tech knowledge, no time to learn, needs privacy protection
+- **[Average Joe/Jane (AJ)](personas/average-joe.md)** - Primary user for ai-way: small business owner, minimal tech knowledge, no time to learn, needs privacy protection
 
 ## ai-way Project Documentation
 
@@ -55,6 +55,12 @@ Configuration guides for running AI agents in different environments:
 - **[Claude Client](clients/CLAUDE.md)** - Sandboxed Claude Code on Fedora Silverblue: distrobox jails, permission bypass, deny-lists, OS-level isolation
 - **[AI-WAY Client](clients/AI-WAY.md)** - (Placeholder) Unified orchestration layer for curated agents
 - **[Docker Client](clients/DOCKER.md)** - (Placeholder) Local inference with Ollama/Docker for developers with GPU hardware
+
+## Conductors
+
+Meta-agents that orchestrate specialist agents and serve as AJ's interface.
+
+- **[Yollayah](conductors/yollayah.md)** - The heart of ai-way: routing, task orchestration, avatar control, personality
 
 ## Agent Categories
 
@@ -152,7 +158,7 @@ Each agent profile includes:
 
 ### ai-way
 **Product**: Privacy-first local AI appliance for small business owners
-**User**: Average Joe (AJ) - minimal tech knowledge, family business owner
+**User**: Average Joe/Jane (AJ) - minimal tech knowledge, family business owner
 **Tech Stack**:
 - Appliance: Fedora Silverblue OR Alpine Linux, Podman, tmpfs (ephemeral storage)
 - Virtualization: WSL2 (Windows), Lima (macOS), native (Linux)

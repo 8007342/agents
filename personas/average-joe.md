@@ -1,8 +1,8 @@
-# Average Joe (AJ) - Primary User Persona
+# Average Joe/Jane (AJ) - Primary User Persona
 
 ## Who is AJ?
 
-**Average Joe** (referred to as "AJ" or "they" throughout all documentation) is the primary user for the ai-way project. Everything we build must work for AJ.
+**Average Joe/Jane** (referred to as "AJ" or "they" throughout all documentation) is the primary user for the ai-way project. Everything we build must work for AJ.
 
 ## Demographics
 
