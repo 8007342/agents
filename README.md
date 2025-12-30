@@ -1,6 +1,6 @@
 # AI Agent Profiles
 
-A collection of specialized AI agent profiles for building software projects. Each agent has defined expertise, personality traits, responsibilities, and working styles to ensure consistent, high-quality results.
+A collection of specialized AI agent profiles - from software development to everyday life. Each agent has defined expertise, personality traits, responsibilities, and working styles. Yollayah, the conductor, treats them all as familia.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ Every agent in this repository inherits the Constitution. It defines:
 
 Understanding who we're building for is critical. All agents must design with our users in mind.
 
-- **[Average Joe/Jane (AJ)](personas/average-joe.md)** - Primary user for ai-way: small business owner, minimal tech knowledge, no time to learn, needs privacy protection
+- **[Average Joe (AJ)](personas/average-joe.md)** - Primary user for ai-way: small business owner, minimal tech knowledge, no time to learn, needs privacy protection
 
 ## ai-way Project Documentation
 
@@ -60,7 +60,7 @@ Configuration guides for running AI agents in different environments:
 
 Meta-agents that orchestrate specialist agents and serve as AJ's interface.
 
-- **[Yollayah](conductors/yollayah.md)** - The heart of ai-way: routing, task orchestration, avatar control, personality
+- **[Yollayah](conductors/yollayah.md)** - The heart of ai-way: routing, task orchestration, avatar control, personality, and a big familia of experts
 
 ## Agent Categories
 
@@ -123,6 +123,53 @@ Specialized roles for specific concerns.
 - **[Mad Scientist Intern](specialists/mad-scientist-intern.md)** - Experimental tech, creative solutions, rapid prototyping
 - **[Chaos Monkey Intern](specialists/chaos-monkey-intern.md)** - Chaos engineering, edge case discovery, resilience testing
 
+---
+
+## La Familia - Blue Collar & Everyday Experts
+
+Yollayah has a big family that can help with real-world, everyday tasks. Not just code - life.
+
+### Trades & Construction
+The folks who build and fix the physical world.
+
+- **[General Contractor](trades/general-contractor.md)** - Project coordination, permits, scheduling, budgeting
+- **[Carpenter](trades/carpenter.md)** - Woodworking, framing, cabinets, furniture, decks
+- **[Electrician](trades/electrician.md)** - Wiring, circuits, panels, lighting, safety-first
+- **[Plumber](trades/plumber.md)** - Pipes, fixtures, water heaters, drain clearing
+- **[Roofer](trades/roofer.md)** - Shingles, leaks, gutters, storm damage
+- **[HVAC Technician](trades/hvac-technician.md)** - Heating, cooling, ventilation, maintenance
+- **[Painter](trades/painter.md)** - Surface prep, paint selection, interior/exterior
+- **[Landscaper](trades/landscaper.md)** - Lawn care, plants, irrigation, hardscaping
+- **[Mason](trades/mason.md)** - Brick, stone, concrete, foundations, retaining walls
+
+### Automotive
+Keep those wheels turning.
+
+- **[Mechanic](automotive/mechanic.md)** - Diagnostics, repairs, maintenance, "what's that noise?"
+- **[Auto Body Specialist](automotive/auto-body-specialist.md)** - Collision repair, dents, paint, insurance claims
+- **[Tire Specialist](automotive/tire-specialist.md)** - Tires, wheels, alignment, seasonal changes
+
+### Culinary
+The kitchen crew.
+
+- **[Home Cook](culinary/home-cook.md)** - Everyday meals, meal prep, "what can I make with this?"
+- **[Baker](culinary/baker.md)** - Bread, pastries, cakes, the science of baking
+- **[Grill Master](culinary/grill-master.md)** - Grilling, smoking, BBQ, fire management
+- **[Bartender](culinary/bartender.md)** - Cocktails, mocktails, entertaining, wine basics
+- **[Nutritionist](culinary/nutritionist.md)** - Healthy eating, labels, dietary needs, myth-busting
+
+### Everyday Life
+Help with the rest of life.
+
+- **[Handyman](everyday/handyman.md)** - Jack-of-all-trades, minor repairs, tool guidance
+- **[Salesperson](everyday/salesperson.md)** - Negotiation, sales tactics, customer service navigation
+- **[Driver](everyday/driver.md)** - Road trips, routes, driving safety, moving logistics
+- **[Seamstress](everyday/seamstress.md)** - Sewing repairs, alterations, fabric care
+- **[Pet Care Specialist](everyday/pet-care.md)** - Animal care, training basics, health triage
+- **[Personal Finance Advisor](everyday/personal-finance.md)** - Budgeting, debt, credit, saving, no-judgment money help
+- **[Home Organizer](everyday/organizer.md)** - Decluttering, storage, cleaning routines
+- **[First Aid Responder](everyday/first-aid.md)** - Emergency first aid, when to call 911, injury care
+
 ## Agent Profile Structure
 
 Each agent profile includes:
@@ -158,7 +205,7 @@ Each agent profile includes:
 
 ### ai-way
 **Product**: Privacy-first local AI appliance for small business owners
-**User**: Average Joe/Jane (AJ) - minimal tech knowledge, family business owner
+**User**: Average Joe (AJ) - minimal tech knowledge, family business owner
 **Tech Stack**:
 - Appliance: Fedora Silverblue OR Alpine Linux, Podman, tmpfs (ephemeral storage)
 - Virtualization: WSL2 (Windows), Lima (macOS), native (Linux)
@@ -275,6 +322,6 @@ This repository inherits the AGPL-3.0 license.
 ---
 
 **Maintained by**: 8007342
-**Last Updated**: 2025-12-19
-**Total Agents**: 21
+**Last Updated**: 2025-12-29
+**Total Agents**: 46 (21 tech + 25 everyday life)
 **Threat Research Documents**: 5
