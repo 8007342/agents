@@ -9,7 +9,7 @@ This is a collection of AI agent profiles and documentation for building softwar
 ### Projects Served
 
 - **inat-observations-wp**: WordPress plugin for iNaturalist biodiversity observations (PHP/JavaScript/MySQL)
-- **ai-way**: Privacy-first local AI appliance for small business owners (Python/Electron/Tauri)
+- **ai-way**: Privacy-first local AI appliance for small business owners (Rust/Bash)
 
 ## Architecture
 

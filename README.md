@@ -207,12 +207,11 @@ Each agent profile includes:
 **Product**: Privacy-first local AI appliance for small business owners
 **User**: Average Joe (AJ) - minimal tech knowledge, family business owner
 **Tech Stack**:
-- Appliance: Fedora Silverblue OR Alpine Linux, Podman, tmpfs (ephemeral storage)
-- Virtualization: WSL2 (Windows), Lima (macOS), native (Linux)
-- AI: Ollama (Llama 3.1, Mistral), ChromaDB (vector DB), RAG pipeline
-- Frontend: Electron/Tauri, drag-drop UI
-- Backend: Python (FastAPI), file parsers
-- Hardware: GPU-accelerated (NVIDIA/AMD CUDA/ROCm, Apple Silicon Metal) with CPU fallback
+- Bootstrap: Bash (yollayah.sh)
+- Conductor: Rust (conductor-core) - headless orchestration, multi-model routing
+- TUI: Rust (ratatui/crossterm) - animated axolotl avatar, streaming responses
+- AI: Ollama (Llama 3.x, Mistral, etc.), local inference only
+- Hardware: GPU-accelerated (NVIDIA CUDA, AMD ROCm) with CPU fallback
 
 **Core Principles**:
 - **Local-first**: All inference on AJ's computer, zero network calls
@@ -224,18 +223,13 @@ Each agent profile includes:
 **Key Agents**:
 - UX/UI Designer (minimalist, AJ-focused interface - CRITICAL)
 - Linux UX Hacker (beautiful boot screens, hide scary terminal text - CRITICAL)
-- Hypervisor Specialist (virtualization magic, cross-platform, GPU passthrough - CRITICAL)
 - Privacy Researcher (agent fingerprinting research, data exfiltration investigation - CRITICAL)
 - Security Auditor (privacy architecture, threat modeling, isolation boundaries - CRITICAL)
 - Solutions Architect (appliance architecture, overall system design)
-- Vector Database Expert (RAG, semantic search, embeddings)
-- Backend Engineer (file parsing, query processing, RAG pipeline)
-- Frontend Specialist (Electron/Tauri, drag-drop UI)
-- DevOps Engineer (container build, distribution, updates)
+- Backend Engineer (Rust conductor, routing, agent orchestration)
 - Performance Optimizer (GPU optimization, query latency, minimal overhead)
 - Documentation Specialist (AJ-friendly language, terminology dictionary)
-- QA Engineer (cross-platform testing, file format support)
-- Relational Database Expert (structured data handling - future)
+- QA Engineer (cross-platform testing, integration tests)
 - Compliance Lawyer (privacy regulations, GDPR/CCPA by design)
 
 ## Agent Collaboration Examples

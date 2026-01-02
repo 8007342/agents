@@ -198,18 +198,18 @@ A privacy-first AI appliance running local LLM inference in an isolated environm
 └────────────────────────────────────────┘
                   ↓
 ┌────────────────────────────────────────┐
-│  Display Layer                         │
-│  • Electron or Tauri (cross-platform)  │
-│  • Native window controls              │
-│  • File drag-drop handling             │
+│  TUI Layer                             │
+│  • Rust (ratatui/crossterm)            │
+│  • Animated axolotl avatar             │
+│  • Streaming responses                 │
 └────────────────────────────────────────┘
                   ↓
 ┌────────────────────────────────────────┐
-│  Application Layer                     │
-│  • Python backend (FastAPI)            │
-│  • File parsing (PyMuPDF, python-docx) │
-│  • NLP query processing                │
-│  • Result generation                   │
+│  Conductor Layer                       │
+│  • Rust (conductor-core)               │
+│  • Multi-model routing                 │
+│  • Agent orchestration                 │
+│  • Context management                  │
 └────────────────────────────────────────┘
                   ↓
 ┌────────────────────────────────────────┐
@@ -246,19 +246,19 @@ A privacy-first AI appliance running local LLM inference in an isolated environm
 
 ### Component Details
 
-**Frontend (What AJ Sees):**
-- Electron or Tauri app
-- Single window interface
+**TUI (What AJ Sees):**
+- Rust terminal UI (ratatui/crossterm)
+- Animated axolotl avatar with personality
+- Streaming responses with live avatar reactions
+- Background task display for sub-agent work
 - Minimalist design (UX/UI Designer spec)
-- Drag-drop file handling
-- Real-time status updates
 
-**Backend (Processing):**
-- FastAPI server (local, not networked)
-- File parsers for each format
-- Query understanding (intent classification)
-- RAG orchestration
-- Response generation
+**Conductor (Orchestration):**
+- Rust (conductor-core crate)
+- Multi-model routing and fallback
+- Agent handoff and context management
+- Streaming response handling
+- Health monitoring
 
 **AI Engine:**
 - Ollama for model serving
@@ -563,20 +563,16 @@ A privacy-first AI appliance running local LLM inference in an isolated environm
 ### Primary Agents
 1. **Solutions Architect** - Overall appliance architecture
 2. **UX/UI Designer** - Minimalist interface, AJ-focused design
-3. **Backend Engineer** - Python backend, file parsing, RAG pipeline
-4. **Frontend Specialist** - Electron/Tauri app, drag-drop UI
-5. **Vector Database Expert** - ChromaDB integration, embeddings, RAG
-6. **DevOps Engineer** - Container build, distribution, updates
-7. **Security Auditor** - Privacy review, threat modeling
-8. **Relational Database Expert** - Future: structured data handling
-9. **Performance Optimizer** - GPU optimization, query speed
-10. **QA Engineer** - Testing across platforms and file types
-11. **Documentation Specialist** - User docs in AJ-friendly language
+3. **Backend Engineer** - Rust conductor, routing, agent orchestration
+4. **Security Auditor** - Privacy review, threat modeling
+5. **Performance Optimizer** - GPU optimization, query speed
+6. **QA Engineer** - Testing across platforms, integration tests
+7. **Documentation Specialist** - User docs in AJ-friendly language
 
 ### Supporting Agents
-12. **Mad Scientist Intern** - Experimental features (multi-modal, etc.)
-13. **Chaos Monkey Intern** - Edge case testing, failure scenarios
-14. **Compliance Lawyer** - Privacy regulations, licensing
+8. **Mad Scientist Intern** - Experimental features (multi-modal, etc.)
+9. **Chaos Monkey Intern** - Edge case testing, failure scenarios
+10. **Compliance Lawyer** - Privacy regulations, licensing
 
 ---
 

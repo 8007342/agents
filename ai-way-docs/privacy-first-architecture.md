@@ -305,12 +305,12 @@
 - Mistral 7B (quality)
 - Future: domain-specific fine-tuned models
 
-### Vector Database: ChromaDB (in-memory)
-**Why:**
+### Vector Database (future consideration)
+**Requirements:**
 - Embedded (no separate process)
-- In-memory mode (tmpfs)
+- In-memory mode (tmpfs compatible)
 - Fast semantic search
-- Python integration
+- Rust-native or FFI-compatible
 - Ephemeral by default
 
 ---
